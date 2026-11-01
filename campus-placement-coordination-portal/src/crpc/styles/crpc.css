@@ -1,0 +1,26 @@
+/* CRPC Directorate Styles */
+
+.crpc-card {
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(23, 43, 69, 0.04);
+}
+
+.designation-badge-super-admin {
+  background-color: #FDF9F0;
+  color: #8A642A;
+  border: 1px solid #E0B66D;
+}
+
+.designation-badge-officer {
+  background-color: #E7EDF5;
+  color: #17365D;
+  border: 1px solid rgba(23, 54, 93, 0.2);
+}
+
+.designation-badge-coordinator {
+  background-color: #EFF8FF;
+  color: #175CD3;
+  border: 1px solid rgba(23, 92, 211, 0.2);
+}

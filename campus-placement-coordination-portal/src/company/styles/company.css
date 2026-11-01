@@ -1,0 +1,16 @@
+/* Corporate Partner Workspace Styles */
+
+.company-card {
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(23, 43, 69, 0.04);
+}
+
+.pipeline-stage-column {
+  background-color: #F8FAFC;
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  min-height: 480px;
+}

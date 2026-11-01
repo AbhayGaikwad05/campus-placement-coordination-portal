@@ -1,0 +1,64 @@
+/* Authentication Styles */
+
+.auth-page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--bg-main);
+  padding: 1.5rem 1rem;
+}
+
+.auth-card-container {
+  max-width: 520px;
+  width: 100%;
+  margin: 2rem auto;
+}
+
+.role-tab-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  border-radius: 0.65rem;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--text-secondary);
+}
+
+.role-tab-btn.active {
+  background-color: #FFFFFF;
+  color: var(--primary-navy);
+  border-color: var(--border-color);
+  box-shadow: 0 2px 6px rgba(23, 54, 93, 0.08);
+}
+
+.role-tab-btn:hover:not(.active) {
+  color: var(--text-primary);
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.persona-switcher-pill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.65rem 0.85rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-color);
+  background-color: #FFFFFF;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+}
+
+.persona-switcher-pill:hover {
+  border-color: var(--interactive-blue);
+  background-color: var(--pale-blue-subtle);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(52, 120, 197, 0.1);
+}

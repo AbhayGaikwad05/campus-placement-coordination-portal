@@ -1,0 +1,51 @@
+/* Public Homepage Styles */
+
+.public-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.hero-banner {
+  background: linear-gradient(135deg, #17365D 0%, #254E7A 60%, #17365D 100%);
+  color: #FFFFFF;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-pattern {
+  position: absolute;
+  inset: 0;
+  opacity: 0.05;
+  background-image: radial-gradient(#FFFFFF 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.feature-card {
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-color);
+  border-radius: 0.875rem;
+  padding: 1.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.feature-card:hover {
+  border-color: var(--interactive-blue);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(23, 54, 93, 0.08);
+}
+
+.workflow-step-pill {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 9999px;
+  background-color: var(--pale-blue);
+  color: var(--primary-navy);
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

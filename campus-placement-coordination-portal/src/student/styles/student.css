@@ -1,0 +1,24 @@
+/* Student Portal Custom Styles */
+
+.student-card {
+  background-color: #FFFFFF;
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(23, 43, 69, 0.04);
+}
+
+.student-resume-pill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-color);
+  background-color: #FFFFFF;
+  transition: all 0.15s ease-in-out;
+}
+
+.student-resume-pill:hover {
+  border-color: var(--interactive-blue);
+  background-color: var(--pale-blue-subtle);
+}

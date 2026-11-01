@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+:root {
+  /* Clean Institutional Light Palette */
+  --bg-primary: #F8FAFC;        /* Crisp slate-50 background */
+  --bg-surface: #FFFFFF;        /* Clean pure white card surface */
+  --bg-subtle: #F1F5F9;         /* Light slate container */
+  --bg-card: #FFFFFF;           /* Elevated card surface */
+  --bg-hover: #F8FAFC;          /* Hover highlight */
+  
+  --text-main: #0F172A;         /* Slate-900 high contrast readable text */
+  --text-muted: #64748B;        /* Slate-500 subtitle & muted text */
+  --text-light: #94A3B8;        /* Slate-400 secondary text */
+
+  /* Brand Accents */
+  --brand-blue: #3974C6;
+  --brand-blue-dark: #2d60a6;
+  --brand-blue-light: #EFF5FF;
+  
+  /* Semantic Statuses */
+  --status-error: #EF4444;
+  --status-error-bg: #FEF2F2;
+  --status-success: #10B981;
+  --status-success-bg: #ECFDF5;
+  --status-info: #0284C7;
+  --status-info-bg: #F0F9FF;
+
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  
+  --radius-card: 1rem; /* 16px rounded-2xl curves */
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Clean standard scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+  border: 1px solid #F1F5F9;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Standard elevation card utilities */
+.card-modern {
+  background-color: var(--bg-surface);
+  border: 1px solid #E2E8F0;
+  border-radius: var(--radius-card);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+}
+
+.card-modern-hover {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.card-modern-hover:hover {
+  background-color: var(--bg-hover);
+  border-color: #CBD5E1;
+  box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.08);
+}
